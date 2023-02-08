@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="sssss .css">
+    <script src="script .js"></script>
+</head>
+<body>
+    <h2>Please Check your Name</h2>
+        <input type="text" placeholder="Check  Name " id="nam">
+        <button id="vv" onclick="opegh()">Next</button>
+   <button onclick="fgffx()" id="bu">Your Adg</button> 
+    <div class="container" id="co">
+    <input type="text" placeholder="Day" id="in1">
+   <input type="text" placeholder="Month" id="in2">
+   <input type="text" placeholder="Year" id="in3">
+   <br>
+
+   <br>
+   
+   <div id="val" >
+      <h1 id="hh">Calculate Your Age ♡♡</h1>
+   </div>
+   </div> 
+    <script>
+        let co =document.getElementById("co");
+ let nam =document.getElementById("nam");
+ let bu =document.getElementById("bu");
+ let vv =document.getElementById("vv");
+        function opegh() {
+            if (nam.value != "") {
+                co.style.display ="block";
+                bu.style.display ="block";
+                nam.style.display ="none";
+                vv.style.display ="none";
+          alert("OK  " + "꧁" + nam.value + " ꧂" + " ωєℓcσмє");
+            }else{
+               alert("E𝒓𝒓𝒐𝒓❗ P𝒍𝒆𝒂𝒔𝒆 𝒄𝒉𝒆𝒄𝒌 𝒚𝒐𝒖𝒓 Ⓝⓐⓜⓔ ❌❗"); 
+            }
+        }
+
+        
+        
+        
+         function fgffx() {
+         let nam =document.getElementById("nam");
+let yom = document.getElementById("in1");
+let month = document.getElementById("in2");
+let year = document.getElementById("in3");  
+  
+  /////Days//////
+  
+    let data = new Date();
+    let Gyom = data.getDate();
+    let Gyear = data.getFullYear() -1;
+    let Gmonth = data.getMonth() +1;
+     
+  ////===============if================///
+if (month.value > Gmonth) {
+var sss =  month.value - Gmonth;
+
+     }else{
+         var sss = Gmonth - month.value;
+     }
+     
+    if (year.value > Gyear){
+         var fyear = year.value - Gyear;
+     } else{
+         var fyear = Gyear - year.value;
+     }
+     if(yom.value > Gyom) {
+      var yyyyx = yom.value - Gyom;
+     }else {
+         var yyyyx = Gyom - yom.value;
+     }
+         
+     
+    
+       
+   
+   val.innerHTML = nam.value + " Stay on your birthday " + yyyyx + " Days " + "and " + sss + " Month" + " And Your Adg " + fyear;
+   
+   
+}   
+    </script>
+    
+    
+</body>
