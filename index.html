@@ -7,7 +7,7 @@
     <script src="script .js"></script>
 </head>
 <body>
-    <h2>Please Check your Name</h2>
+    <h2 id="aadr">Please Check your Name</h2>
         <input type="text" placeholder="Check  Name " id="nam">
         <button id="vv" onclick="opegh()">Next</button>
    <button onclick="fgffx()" id="bu">Your Adg</button> 
@@ -28,12 +28,14 @@
  let nam =document.getElementById("nam");
  let bu =document.getElementById("bu");
  let vv =document.getElementById("vv");
+ let aadr =document.getElementById("aadr");
         function opegh() {
             if (nam.value != "") {
                 co.style.display ="block";
                 bu.style.display ="block";
                 nam.style.display ="none";
                 vv.style.display ="none";
+                aadr.style.display ="none";
           alert("OK  " + "꧁" + nam.value + " ꧂" + " ωєℓcσмє");
             }else{
                alert("E𝒓𝒓𝒐𝒓❗ P𝒍𝒆𝒂𝒔𝒆 𝒄𝒉𝒆𝒄𝒌 𝒚𝒐𝒖𝒓 Ⓝⓐⓜⓔ ❌❗"); 
